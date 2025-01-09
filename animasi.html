@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        background-color: aqua;
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @keyframes spin {
+        0% {
+          border-radius: 10%;
+        }
+
+        25% {
+          scale: 1;
+          transform: rotate(0);
+          border-radius: 25%;
+          background-color: blue;
+          color: white;
+        }
+
+        50% {
+          scale: 2;
+          transform: rotate(0);
+          border-radius: 50%;
+          background-color: darkblue;
+          color: antiquewhite;
+        }
+
+        75% {
+          scale: 3;
+          transform: rotate(0);
+          border-radius: 75%;
+        }
+
+        100% {
+          transform: rotate(-360deg);
+          border-radius: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p class="tulisan">Sing bener Bae Gah</p>
+      </div>
+  </body>
+</html>
